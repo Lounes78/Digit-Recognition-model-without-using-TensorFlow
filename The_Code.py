@@ -40,8 +40,7 @@ def softmax(Z): #Gives us prob
 	A = np.exp(Z) / sum(np.exp(Z))
 	return A
 
-#Metki d kan un truc les poids et les biais à chaque iterations sont communs à 
-# toutes les images hhhhh c ça aygher je bloque ouk hamdoulah fright
+
 def forward_prop(W1, b1, W2, b2, X):
 	Z1 = W1.dot(X) + b1
 	A1 = ReLU(Z1)
