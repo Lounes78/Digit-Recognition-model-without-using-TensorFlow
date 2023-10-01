@@ -1,18 +1,10 @@
-# Digit-Recognition-model-without-using-TensorFlow
-A simple 2-layer neural network for digit recognition using the MNIST data set coded just using basic Linear Algebra exploiting Gradient Descent formulas.
-
-# Overview
-
-
-Your README file should provide more comprehensive information about your project. Here's an expanded README template for your neural network project:
-
 # Simple 2-Layer Neural Network for Digit Recognition
 
-This repository contains a basic implementation of a 2-layer neural network for digit recognition using the MNIST dataset. The neural network is coded entirely using fundamental Linear Algebra concepts and leverages Gradient Descent formulas.
+A simple 2-layer neural network for digit recognition using the MNIST data set coded just using basic Linear Algebra exploiting Gradient Descent formulas.
 
 ## Overview
 
-The purpose of this project is to demonstrate a minimalistic neural network implementation for recognizing handwritten digits. It serves as an educational example for those interested in understanding the core concepts of neural networks and deep learning.
+The purpose of this project is to demonstrate a minimalistic neural network implementation for recognizing handwritten digits. It serves as an educational example for those, like me, are interested in understanding the core concepts of neural networks and deep learning.
 
 ## Features
 
