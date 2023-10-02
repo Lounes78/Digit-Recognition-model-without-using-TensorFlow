@@ -42,7 +42,7 @@ git clone https://github.com/your-username/your-repo.git
 cd your-repo
 ```
 
-3. Run the Jupyter Notebook or Python script to train and test the neural network.
+3. Run the Python script to train and test the neural network.
 
 ```bash
 python main.py
