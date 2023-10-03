@@ -3,21 +3,24 @@ import pandas as pd
 from matplotlib import pyplot as plt
 
 #Data Preprocessing/Preparation
-data = pd.read_csv('data/mnist_train.csv')
+data_train = pd.read_csv('data/mnist_train.csv')
+data_dev   = pd.read_csv('data/mnist_test.csv')
 
-data = np.array(data) #each line represent an image / the first column contains the label / 60000*785
-m, n = data.shape
-np.random.shuffle(data) #Shuffling the data to avoid biases in the model
 
+data_train = np.array(data_train) #each line represent an image / the first column contains the label / 60000*785
+m, n = data_train.shape
+np.random.shuffle(data_train) #Shuffling the data to avoid biases in the model
+
+data_dev = np.array(data_dev)
+data_dev = data_dev.T
 
 #developpement/validation data
-data_dev = data[0:1000].T
 Y_dev = data_dev[0] #label
 X_dev = data_dev[1:n]
 X_dev = X_dev / 255.
 
 #Training data
-data_train = data[1000:m].T
+data_train = data_train.T
 Y_train = data_train[0] #label
 X_train = data_train[1:n] 
 X_train = X_train / 255.
@@ -100,7 +103,7 @@ def gradient_descent(X, Y, alpha, iterations):
 
 
 # Training
-W1, b1, W2, b2 = gradient_descent(X_train, Y_train, 0.10, 500)
+W1, b1, W2, b2 = gradient_descent(X_train, Y_train, 0.10, 200)
 
 
 
@@ -108,7 +111,7 @@ W1, b1, W2, b2 = gradient_descent(X_train, Y_train, 0.10, 500)
 def make_prediction(X, W1, W2, b1, b2):
 	_, _, _, A2 = forward_prop(W1, b1, W2, b2, X)
 	prediction = get_predictions(A2)
-	return prediction  
+	return prediction   # si ça reçoie une seule image ça renvoie 1 thing sinon a list of predictions waw
 
 
 def test_prediction(index, W1, W2, b1, b2):
