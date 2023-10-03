@@ -48,6 +48,11 @@ cd your-repo
 python main.py
 ```
 
+## Data Conversion
+
+I have provided a Python script (`convert_to_csv.py`) to convert the binary MNIST dataset provided in LeCun web site into CSV format.
+
+
 ## Contributing
 
 Contributions are welcome! If you'd like to improve this project or fix any issues, please fork the repository and create a pull request.
