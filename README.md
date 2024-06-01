@@ -52,17 +52,3 @@ python main.py
 
 I have provided a Python script (`convert_to_csv.py`) to convert the binary MNIST dataset provided in LeCun web site into CSV format.
 
-
-## Contributing
-
-Contributions are welcome! If you'd like to improve this project or fix any issues, please fork the repository and create a pull request.
-
-## License
-
-This project is licensed under the MIT License 
-
-## Acknowledgments
-
-- The MNIST dataset used in this project is provided by Yann LeCun and Corinna Cortes. You can find more information about the dataset [here](http://yann.lecun.com/exdb/mnist/).
-
-Feel free to expand on this README with additional sections as needed for your project.
